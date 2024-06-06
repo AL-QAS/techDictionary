@@ -32,6 +32,7 @@ const HomePage = () => {
 const headlines = [
   {
     header: 'Searched words',
+    path:'/SearchedWords',
     body:[
     {  subHeader:'Top 3 most searched words',
       content: results
@@ -40,6 +41,7 @@ const headlines = [
   },
   {
     header: 'Recent words',
+    path:'/recentWords',
     body:[{
       subHeader:'Top 3 recently added',
       content: results
@@ -61,7 +63,7 @@ const headlines = [
     <div className="main__feed-box">
     <div   className="main__feed-container">
     <h3 key={i} className='main__feed-header'>{item.header}</h3>
-    <button className="main__feed-btn" onClick={()=>navigate('/SearchedWords')}>See more</button>
+    <button className="main__feed-btn" onClick={()=>navigate(item.path)}>See more</button>
     </div>
 
 {item.body.map((lists,i)=>{
@@ -96,15 +98,15 @@ const headlines = [
 <div className="main__feed-edit">
   <h4>Made for you</h4>
 <div>
-<button ><img src={edit}/></button>
+<button onClick={()=>navigate('/changeWord')}><img src={edit}/></button>
    <p >Request Change to Word</p>
 </div>
 <div>
-<button ><img src={edit}/></button>
+<button onClick={()=>navigate('/newWord')}><img src={edit}/></button>
     <p >Request New Word</p>
 </div>
 <div>
-<button  ><img src={darkbook}/></button>
+<button onClick={()=>navigate('/bookmarks')} ><img src={darkbook}/></button>
           <p >Bookmarks</p>
 </div>
 

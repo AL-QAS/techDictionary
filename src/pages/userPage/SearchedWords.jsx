@@ -9,7 +9,7 @@ const SearchedWords = () => {
       <div className='section__padding' >
   <Header/>
 </div>
-<Feed header='Searched words'/>
+<Feed header='Searched words' subhead='Most recently searched words '/>
     </>
   )
 }

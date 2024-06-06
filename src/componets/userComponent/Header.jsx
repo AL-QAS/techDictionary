@@ -2,7 +2,7 @@ import { Stack,Box,Typography } from '@mui/material'
 import './header.css'
 import axios from 'axios'
 import React ,{useState,useEffect}from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import { Paper, IconButton } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import  book  from '../../assets/book.svg'
@@ -59,8 +59,10 @@ const [results,setResult] = useState([])
     alignItems="center"
     gap={2}
     >
+      <Link to='/' style={{display:'flex',gap:4}}>
     <img src={book} alt="book"/>   
     <p style={{color:'#2B00D7', fontSize:'30px', lineHeight:'34.5px'}}>Tech-dictionary</p>
+    </Link>
      </Box>
 
 

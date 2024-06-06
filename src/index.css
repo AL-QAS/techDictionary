@@ -97,7 +97,8 @@
    background-color:#fff;
    display:flex;
   flex-direction:column;
-  width:300px
+  width:300px;
+  margin-top:50px
 }
 .main__feed-edit h4{
   font-size:24px;

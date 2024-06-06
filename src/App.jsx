@@ -2,7 +2,7 @@ import {
   BrowserRouter as Router,
   Routes, Route, Link
 } from 'react-router-dom'
-import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords,UpdatedWords } from './pages/userPage'
+import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords,WordMeaning } from './pages/userPage'
 import { UserRequest,Account,Dashboard,LoginPage,Words} from './pages/adminPage'
 
 
@@ -16,6 +16,7 @@ const App = () => {
 
      <Routes>
        <Route path="/" element={<HomePage />} />
+       <Route path="/wordMeaning" element={<WordMeaning />} />
        <Route path="/bookmarks" element={<Bookmarks/>} />
        <Route path="/changeWord" element={<ChangeWord />} />
        <Route path="/newWord" element={<NewWord />} />

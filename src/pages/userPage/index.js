@@ -5,6 +5,7 @@ import NewWord from "./NewWord";
 import RecentWords from "./RecentWords";
 import SearchedWords from "./SearchedWords";
 import UpdatedWords from "./UpdatedWords";
+import WordMeaning from "./WordMeaning";
 
 
 export {
@@ -15,4 +16,5 @@ export {
     RecentWords,
      SearchedWords,
     UpdatedWords,
+    WordMeaning,
 };

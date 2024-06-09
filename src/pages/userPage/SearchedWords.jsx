@@ -1,10 +1,16 @@
 import React from 'react'
+import { Header,Feed,Buttons } from '../../componets/userComponent'
+
+
 
 const SearchedWords = () => {
   return (
-    <div>
-      searchedwords
-    </div>
+    <>
+      <div className='section__padding' >
+  <Header/>
+</div>
+<Feed header='Searched words' subhead='Most recently searched words '/>
+    </>
   )
 }
 

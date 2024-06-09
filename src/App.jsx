@@ -2,7 +2,11 @@ import {
   BrowserRouter,
   Routes, Route
 } from 'react-router-dom'
-import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords } from './pages/userPage'
+
+
+
+import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords,WordMeaning } from './pages/userPage'
+
 import { UserRequest,Account,Dashboard,LoginPage,Words} from './pages/adminPage'
 import ForgotPassword from './componets/adminComponent/ForgotPasswoed'
 import ResetPasssword from './componets/adminComponent/ResetPassword'
@@ -11,10 +15,22 @@ import ResetPasssword from './componets/adminComponent/ResetPassword'
 
 
 const App = () => {
+
+  const word = 'Javascript';
   return (
+
      <BrowserRouter>
+
+   
+
+    <div>
+     <Router>
+     
+
+
      <Routes>
-       <Route path="/" element={<HomePage />} />
+       <Route path="/" element={<HomePage word={word}/>} />
+       <Route path="/wordMeaning" element={<WordMeaning word={word} />} />
        <Route path="/bookmarks" element={<Bookmarks/>} />
        <Route path="/changeWord" element={<ChangeWord />} />
        <Route path="/newWord" element={<NewWord />} />

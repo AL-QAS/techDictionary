@@ -1,7 +1,9 @@
 .feed__container{
     background-color: #F5F5F5;
     width:70%;
-  margin:0 auto
+  margin:0 auto;
+  padding: 20px;
+  border-radius: 32px
 }
 
 .feed__container-content-box{

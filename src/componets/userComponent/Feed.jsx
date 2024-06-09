@@ -28,11 +28,11 @@ const [results,setResult] = useState([])
   return (
     <div className='feed__container'>
       <div className='feed__header'>
-    <h3>{header}</h3>
+    <h3 style={{fontSize:'24px',fontWeight:'bold',lineHeight:'28.8px'}}>{header}</h3>
       </div>
       <div className="feed__container-content-box">
       <div>
-        <h4 className='subhead'>{subhead}</h4>
+        <h4 className='subhead' style={{marginBottom:'10px'}}>{subhead}</h4>
     
 {results.map((item,i)=>{
   return(

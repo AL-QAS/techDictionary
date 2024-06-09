@@ -1,13 +1,13 @@
 import React from 'react'
 import axios from 'axios'
 import { useState,useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,Link } from 'react-router-dom'
 import { Header,Feed,Buttons } from '../../componets/userComponent'
 import  Bookmark  from '../../assets/Bookmark.svg'
 import  edit  from '../../assets/edit.svg'
 import  darkbook  from '../../assets/darkbook.svg'
 
-const HomePage = () => {
+const HomePage = ({word}) => {
   const [results,setResult] = useState([])
 
   let navigate = useNavigate()
@@ -56,6 +56,11 @@ const headlines = [
   <Header/>
 </div>
 
+<div className="home__wordOfTheDay">
+<span>{word}</span>
+<h3>Word of the Day</h3>
+</div>
+
 <div className="section__padding  main__feed">
 {headlines.map((item,i)=>{
   return(
@@ -70,7 +75,7 @@ const headlines = [
   return(
     <>
 <div className="main__feed-content_box">
-  <h4 key={i}>{lists.subHeader}</h4>
+  <h4 key={i} style={{fontWeight:'bold'}}>{lists.subHeader}</h4>
 
   {lists.content.splice(0,3).map((item,i)=>{
     return(
@@ -99,15 +104,15 @@ const headlines = [
   <h4>Made for you</h4>
 <div>
 <button onClick={()=>navigate('/changeWord')}><img src={edit}/></button>
-   <p >Request Change to Word</p>
+   <Link to="/changeWord">Request Change to Word</Link>
 </div>
 <div>
 <button onClick={()=>navigate('/newWord')}><img src={edit}/></button>
-    <p >Request New Word</p>
+    <Link to="/newWord">Request New Word</Link>
 </div>
 <div>
 <button onClick={()=>navigate('/bookmarks')} ><img src={darkbook}/></button>
-          <p >Bookmarks</p>
+        <Link to = "/bookmarks">Bookmarks</Link>
 </div>
 
 </div>

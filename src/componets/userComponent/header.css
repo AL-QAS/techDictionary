@@ -38,10 +38,16 @@
     
 }
 
+@media screen and (max-width: 680px) {
+    .search-bar{
+        width:400px
+    }
+}
+
 @media screen and (max-width: 490px) {
     .p__heading{
-        font-size: 39px;
-        line-height: 34px;
+        font-size: 45px;
+        line-height: 60px;
        
     }
 
@@ -49,7 +55,7 @@
     font-size: 20px
 }
 
-    input{
+    .search-bar{
         width:100%
     }
 }

@@ -24,7 +24,7 @@ const App = () => {
    
 
     <div>
-     <Router>
+  
      
 
 
@@ -45,7 +45,7 @@ const App = () => {
        <Route path="/Words" element={<Words />} />
        
      </Routes>
-
+  </div> 
    </BrowserRouter>
   )
 }

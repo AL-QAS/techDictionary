@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+import {
+  BrowserRouter as Router,
+  Routes, Route, Link
+} from 'react-router-dom'
+import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords,WordMeaning } from '../src/userPage'
+import { UserRequest,Account,Dashboard,LoginPage,Words, Analytics, Setting, Logout} from '../src/adminPage'
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+     <Router>
+     <Routes>
+     <Route path="/" element={<HomePage />} />
+       <Route path="/wordMeaning" element={<WordMeaning />} />
+       <Route path="/bookmarks" element={<Bookmarks/>} />
+       <Route path="/changeWord" element={<ChangeWord />} />
+       <Route path="/newWord" element={<NewWord />} />
+       <Route path="/recentWords" element={<RecentWords />} />
+       <Route path="/SearchedWords" element={<SearchedWords/>} />
+       <Route path="/account" element={<Account />} />
+       <Route path="/dashboard" element={<Dashboard/>} />
+       <Route path="/loginPage" element={<LoginPage />} />
+       <Route path="/userRequest" element={<UserRequest />} />
+       <Route path="Analytics" element={<Analytics />} />
+       <Route path="Setting" element={<Setting />} />
+       <Route path="Logout" element={<Logout />} />
+       <Route path="/Words" element={<Words />} />
+     </Routes>
+   </Router>
+    </div>
   )
 }
 
 export default App
+

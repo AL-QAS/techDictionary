@@ -1,0 +1,208 @@
+.acc{
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@font-face {
+    font-family: inter;
+    src: url("../../assets/Fonts/inter.ttf");
+}
+.acc h1{
+    width: 317px;
+    height: 39px;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+   line-height: 38.73px;
+}
+.invite{
+    display: flex;
+    flex-direction: row;
+    background-color: #2B00D7;
+    width:180px;
+    height:60px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.invite p{
+    width: 54px;
+    height: 24px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    margin: 8px 50px;
+    color: #FFFFFF;
+}
+.header{
+    width: 1274;
+    height: 793px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 0 60px;
+    padding: 0;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.con1{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin: 24px 0 0 53px;
+}
+.con1 img{
+    width: 111px;
+    height: 111px;
+    border-radius: 70px;
+}
+.txt{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin:10px 0 0 0 ;
+}
+.txt h1{
+    width: 127px;
+    height: 34px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.89px;
+}
+.txt p{
+    width: 195px;
+    height: 24px;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;    
+}
+.con2{
+    display: flex;
+    flex-direction: row;
+    margin: 63px 65px 0 0;
+    gap: 20px;
+}
+.con2 div{
+    width: 146px;
+    height: 53px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #2B00D7;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+.con2 span div{
+    background-color: #FFFFFF;
+    color: #2B00D7;
+    border: 1.5px solid #2B00D7;
+}
+.con2 p{
+    width: 31px;
+    height: 19px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    margin: 7px 39px;
+}
+.section2{
+    margin: 63px 53px;
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+}
+.name-1{
+    display:flex ;
+    flex-direction: column;
+    gap: 20px;
+}
+.name-1 input{
+    width: 555px;
+    height: 75px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    background-color: #BEBEBE;
+    border: none;
+    outline: none;
+}
+.name-1 input::placeholder{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+}
+.name-2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.name-2 input{
+    width: 555px;
+    height: 75px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
+    background-color: #BEBEBE;
+    border: none;
+    outline: none;
+}
+.name-2 input::placeholder{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+    
+}
+.address{
+    margin:39px 0 0 0;
+}
+.address h1{
+    width: 113px;
+    height: 34px;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.89px;
+    margin-bottom: 20px;
+}
+.label1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.label1 div select{
+    width: 555px;
+    height: 75px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 20px ;
+    background-color: #BEBEBE;
+    border: none;
+    outline: none;
+}
+select option{
+    background-color: #FFFFFF;
+}
+.hidd{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    text-align: left;
+}

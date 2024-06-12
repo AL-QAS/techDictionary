@@ -36,7 +36,7 @@ const Bookmarks = () => {
 
 <div className="feed__container" style={{padding:'20px'}}>
 <div>
-<h4 className='subhead'>Bookmarks</h4>
+<h4 className='subhead' style={{marginLeft:'60px',paddingBottom:'10px',fontWeight:'bold'}}>Bookmarks</h4>
 <div className="feed__container-content-box">
 <div className="bookmark__noContent" style={{margin:'0 auto',display:'block'}}>
   <img src={Frame}/>

@@ -54,6 +54,8 @@
     cursor: 'pointer';
     border-radius: 8px;
     margin-bottom: 10px;
+      border:none;
+    outline:none
   }
 
   .main__feed-box{
@@ -112,7 +114,12 @@ margin-bottom: 10px;
 .main__feed-edit div button{
   display: 'block';
   flex:.5;
+}
 
+.main__feed-content_btn button{
+  background: transparent;
+  border:none;
+  outline:none
 }
 
 .main__feed-edit div p{

@@ -51,7 +51,7 @@
     height:40px;
     background-color: #2E3192;
     color:#fff;
-    cursor: 'pointer';
+    cursor: pointer;
     border-radius: 8px;
     margin-bottom: 10px;
       border:none;
@@ -116,13 +116,15 @@ margin-bottom: 10px;
   flex:.2;
      background: transparent;
   border:none;
-  outline:none
+  outline:none;
+    cursor: pointer
 }
 
 .main__feed-content_btn button{
   background: transparent;
   border:none;
-  outline:none
+  outline:none;
+    cursor: pointer;
 }
 
 .main__feed-edit div p{

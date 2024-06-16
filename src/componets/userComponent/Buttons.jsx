@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { useNavigate,Link } from 'react-router-dom'
 const Buttons = () => {
+  let navigate = useNavigate()
+  
   return (
     <div>
       <button style={{backgroundColor:'#2E3192',
@@ -10,7 +12,7 @@ const Buttons = () => {
       color:'#fff',
       borderRadius:'8px',
       display:'block'
-      }} >Check</button>
+      }} onClick={()=>navigate('/wordMeaning')}>Check</button>
     </div>
   )
 }

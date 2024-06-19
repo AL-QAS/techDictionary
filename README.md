@@ -1,5 +1,4 @@
-Another change (Doz and Amy needs access)
-I'M GOING THROUGH CHANGES IN MY LIFE SONG(DevOps class testing)
+CHECKOUT THE FRONTEND ON NETLIFY: https://deployfrontendr.netlify.app
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -1,0 +1,14 @@
+.td-img{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.options div{
+    width: 70px;
+   background-color: #2000D7;
+   padding: 10px;
+   position: relative;
+   right: 15px;
+   border-radius: 5px;
+   color: #FFFFFF;
+}

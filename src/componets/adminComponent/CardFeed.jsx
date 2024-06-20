@@ -1,7 +1,7 @@
 import React from 'react'
 import "../adminComponent/stylesheets/cardFeed.css"
 import Image from "../../assets/images/potriate.png"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import More from "../../assets/icons/more.png"
 import Paper from '@mui/material/Paper';
 import TableContainer from '@mui/material/TableContainer';
@@ -11,7 +11,7 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import TablePagination from '@mui/material/TablePagination';
-
+import NumSearchTable from './NumSearchTable';
 
 const columns = [
   { id: 'id', label: 'id',  minWidth: 57},
@@ -26,35 +26,72 @@ function createData(id, name, Date, status, word, action) {
   return {id, name, Date, status, word, action};
 }
 
+const images = [
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+  {image:<img src = {More} width={20}/>},
+]
+
 const rows = [
-  createData('#123', "Jane Doe", "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
-  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", <img src = {More} width={20}/>),
+  createData('#123', "Jane Doe", "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem",),
+  createData('#123', 'Jane Doe', "19 May 2024", "Pending", "lorem", ),
 ];
 
 
 const CardFeed = () => {
   const [page, setPage] = useState(0); 
   const [rowsPerPage, setRowsPerPage] = useState(10); 
-  const  [Options, setOptions] = useState(false)
+  const [Options, setOptions] = useState(false)
+  const [Menu,  setMenu] = useState( Array(rows.length).fill(false));
 
 
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-
+  const handleIconClick = () => {
+    setOptions(!Options)
+  }
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0); 
   };
-  const handleIconClick = () => {
-    setOptions(!Options)
+  const hanndleMenu = (index) =>{
+    setMenu(prevMenu => {
+     const newMenu = [...prevMenu];
+     newMenu[index] = !newMenu[index];
+     return newMenu;
+    })
 }
+
+useEffect(() => {
+ const timeoutIds = Menu.map((isOpen, index) => {
+   if (isOpen) {
+     return setTimeout(() => {
+       setMenu(prevMenu => {
+         const newMenuState = [...prevMenu];
+         newMenuState[index] = false;
+         return newMenuState;
+       });
+     }, 5000);
+   }
+   return null;
+ });
+
+ return () => {
+   timeoutIds.forEach(timeoutId => clearTimeout(timeoutId));
+ };
+}, [Menu]);
   return (
     <>
     <div className='card-section'>
@@ -75,11 +112,22 @@ const CardFeed = () => {
           <TableBody>
             {rows
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row) => (
-                <TableRow key={row.code}>
+              .map((row, rowIndex) => (
+                <TableRow key={rowIndex}>
                   {columns.map((column) => (
-                    <TableCell key={column.id} style ={{fontSize: 16, fontFamily: "inter", fontWeight:400,  color: "1E1E1E" }}>
-                      {column.id === 'density' ? row.density.toFixed(2) : row[column.id]}
+                    <TableCell key={column.id} style ={{fontSize: 16, fontFamily: "inter", fontWeight:400,  color: "1E1E1E" , }}>
+                      {row[column.id]}
+                      {column.id === "action" && (
+                <div className="img">
+                     <img src={More} alt=""  width={20} onClick={() => hanndleMenu(rowIndex)}/>
+                      {Menu[rowIndex] && (
+                      <div className='Menu'>
+                        <p>delete</p>
+                      </div>
+                    )}
+             </div>
+                )}
+
                     </TableCell>
                   ))}
                 </TableRow>
@@ -98,55 +146,8 @@ const CardFeed = () => {
       />
     </Paper>
      </div>
-     <div className="section">
-     <h1>Top Searched words</h1>
-     <div className="other-table">
-     <div className="list">
-     <div className='words'>
-      <h3>Word</h3>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-    <li>lorem ipsum</li>
-      </div>
-      <div className="no-words">
-        <h3>No.of searches</h3>
-      <div className="v2">
-      <div className="nums">
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-          <p>2,445</p>
-        </div>
-        <div className="img">
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-       <div onClick={handleIconClick}><img src = {More} width={20}/></div>
-        {Options && (
-            <div className="More">
-                <div>Delete</div>
-            </div>
-        )}
-        </div>
-      </div>
-      </div>
-     </div>
-     <div className='see-more'><h3>See All</h3></div>
-     </div>
-
+     <div className="otherTable">
+     <NumSearchTable/>
      </div>
     </div>
     </>

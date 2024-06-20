@@ -1,5 +1,5 @@
-import React from 'react'
-import { AdminEdit, AdminNav } from '../../componets/adminComponent'
+
+import { AdminEdit, AdminNav,AdminFeed } from '../../componets/adminComponent'
 import "../adminPage/adminStylesheets/words.css"
 import Layout from '../../componets/adminComponent/DashLayout/Layout'
 
@@ -11,6 +11,9 @@ const Words = () => {
     </div>
     <div className="Ed">
       <AdminEdit type={true}/>
+    </div>
+    <div className="feed">
+      <AdminFeed/>
     </div>
    </Layout>
   )

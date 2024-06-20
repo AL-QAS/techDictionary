@@ -6,13 +6,13 @@
     padding: 20px 60px;
 }
 @font-face {
-    font-family: inter;
+    font-family: "inter";
     src: url("../../../assets/Fonts/inter.ttf");
 }
 .Header h4{
     width: 318px;
     height: 39px;
-   font-family: inter;
+   font-family: "inter";
    font-weight: 600;
    font-size: 32px;
    color:  #1E1E1E;
@@ -49,7 +49,7 @@
 #fil h1{
     width:161px ;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
@@ -59,7 +59,7 @@
 #fil p{
     width: 120px;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 40px;
     line-height: 48.41px;
@@ -91,7 +91,7 @@
 #boo h1{
     width:160px ;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
@@ -101,7 +101,7 @@
 #boo p{
     width: 120px;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 40px;
     line-height: 48.41px;
@@ -135,7 +135,7 @@
 #pen h1{
     width:150px ;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     font-weight: 500;
     line-height: 24.2px;
@@ -144,7 +144,7 @@
 #pen p{
     width: 81px;
     height: 48px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 40px;
     line-height: 48.41px;
@@ -185,7 +185,7 @@
 #sec1 h1{
     width:154px ;
     height: 38px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
@@ -195,7 +195,7 @@
 #sec1 p{
     width: 128px;
     height: 34px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 28px;
     line-height: 33.89px;
@@ -227,7 +227,7 @@
 #sec2 h1{
     width:154px ;
     height: 38px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
@@ -237,7 +237,7 @@
 #sec2 p{
     width: 128px;
     height: 34px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 28px;
     line-height: 33.89px;
@@ -273,7 +273,7 @@
 #sec3 h1{
     width:154px ;
     height: 38px;
-    font-family: inter;
+    font-family:"inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
@@ -283,7 +283,7 @@
 #sec3 p{
     width: 128px;
     height: 34px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 28px;
     line-height: 33.89px;
@@ -318,7 +318,7 @@
 #sec4 h1{
     width:154px ;
     height: 38px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
@@ -328,7 +328,7 @@
 #sec4 p{
     width: 128px;
     height: 34px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 700;
     font-size: 28px;
     line-height: 33.89px;

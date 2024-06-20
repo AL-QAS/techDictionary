@@ -7,6 +7,8 @@ import Passwords from "./Passwords";
 import Sidebar from "./Sidebar";
 import AdminNav from "./adminNav";
 import ForgotPassword from "./ForgotPassword"
+import UpdateTable from "./UpdateTable"
+import NumSearchTable from "./NumSearchTable";
 
 
 
@@ -20,4 +22,6 @@ export {
     Sidebar,
     AdminNav,
     ForgotPassword,
+    UpdateTable,
+    NumSearchTable,
 };

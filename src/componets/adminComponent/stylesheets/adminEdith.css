@@ -6,7 +6,7 @@
     padding: 30px 60px;
     /* width: 259px; */
     height: 39px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 600;
     font-size: 18px;
     line-height: 38.73px;
@@ -36,7 +36,7 @@
 .text p{
     /* width: 93px; */
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 500;
     font-size: 20px;
     line-height: 24.2px;
@@ -72,7 +72,7 @@
 .input input::placeholder{
     width: 95px;
     height: 19px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 400;
     font-size: 16px;
     line-height: 19.36px;
@@ -94,7 +94,7 @@
 .category p{
     width: 139px;
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     line-height: 24.2px;
     padding: 8px 0 0 0;
@@ -115,7 +115,7 @@
 .date p{
     width: 139px;
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     line-height: 24.2px;
     padding: 8px 0 0 20px;
@@ -145,7 +145,7 @@
 .update p{
     /* width: 93px; */
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-weight: 500;
     font-size: 20px;
     line-height: 24.2px;
@@ -165,7 +165,7 @@
 .word p{
     width: 139px;
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     line-height: 24.2px;
     padding: 8px 0 0 20px;
@@ -186,7 +186,7 @@
 .status p{
     width: 139px;
     height: 24px;
-    font-family: inter;
+    font-family: "inter";
     font-size: 20px;
     line-height: 24.2px;
     padding: 8px 0 0 20px;

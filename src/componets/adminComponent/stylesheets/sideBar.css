@@ -8,8 +8,8 @@
     overflow-x: hidden;
 }
 @font-face {
-    font-family: "Roman";
-    src: url("../../../assets/Fonts/times\ new\ roman.ttf");
+    font-family: "Tino";
+    src: url("../../../assets/Fonts/Tinos-Regular.ttf")
 }
 @font-face {
     font-family:"inter";
@@ -42,7 +42,7 @@
 }
 .logo h2{
     color:#FFFFFF ;
-    font-family: "Roman";
+    font-family: "Tino";
     font-size: 30px;
     font-weight: 700;
     line-height: 34.5px;

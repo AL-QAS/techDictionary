@@ -1,0 +1,47 @@
+.logout-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@font-face {
+    font-family: "inter";
+    src: url("../../../assets/Fonts/inter.ttf");
+}
+
+.contents div{
+    margin: 5% 35%;
+    width: 118px;
+    height: 118px;
+}
+.contents h1{
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.73px;
+    text-align: center;    
+    padding: 13px 0;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap:13px;
+    margin-top: 32px;
+}
+.buttons button{
+    width: 594px;
+    height: 75px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #2B00D7;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;    
+    cursor: pointer;
+    color: #FFFFFF;
+}
+.buttons span button{
+    border: 1.5px solid #2B00D7;
+    background-color: #FFFFFF;
+    color: #2B00D7;
+}

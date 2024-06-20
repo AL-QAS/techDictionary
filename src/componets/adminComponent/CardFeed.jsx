@@ -103,7 +103,7 @@ useEffect(() => {
           <TableHead>
             <TableRow >
               {columns.map((column) => (
-                <TableCell key={column.id} style={{ minWidth: column.minWidth,  fontFamily: "inter", fontSize:20,}}>
+                <TableCell key={column.id} style={{ minWidth: column.minWidth,  fontFamily: "inter", fontSize:15,}}>
                   {column.label}
                 </TableCell>
               ))}
@@ -115,11 +115,11 @@ useEffect(() => {
               .map((row, rowIndex) => (
                 <TableRow key={rowIndex}>
                   {columns.map((column) => (
-                    <TableCell key={column.id} style ={{fontSize: 16, fontFamily: "inter", fontWeight:400,  color: "1E1E1E" , }}>
+                    <TableCell key={column.id} style ={{fontSize: 13, fontFamily: "inter", fontWeight:400,  color: "1E1E1E" , }}>
                       {row[column.id]}
                       {column.id === "action" && (
                 <div className="img">
-                     <img src={More} alt=""  width={20} onClick={() => hanndleMenu(rowIndex)}/>
+                     <img src={More} alt=""  width={18}  onClick={() => hanndleMenu(rowIndex)}/>
                       {Menu[rowIndex] && (
                       <div className='Menu'>
                         <p>delete</p>

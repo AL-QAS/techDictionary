@@ -91,7 +91,7 @@ const UpdateTable = () => {
   }, [Menu]);
   return (
     <div className='UpdateTable'>
-         <Paper style={{ width: '100%', overflow: 'hidden' }}>
+         <Paper style={{ width: '100&', overflow: 'hidden' }}>
       <TableContainer style={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
@@ -112,7 +112,7 @@ const UpdateTable = () => {
           <TableCell
             key={column.id}
             style={{
-              fontSize: 16,
+              fontSize: 14,
               fontFamily: "Inter, sans-serif",
               fontWeight: 400,
               color: "#1E1E1E",
@@ -122,7 +122,7 @@ const UpdateTable = () => {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "space-between",
-                marginTop: "30px"
+                marginTop: "50px"
               })
             }}
           >

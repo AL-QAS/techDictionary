@@ -49,9 +49,9 @@ const NumSearchTable = () => {
           '--TableCell-height': '40px',
           // the number is the amount of the header rows.
           '--TableHeader-height': 'calc(1 * var(--TableCell-height))',
-          width: 395,
+          width: 325,
           height: 490,
-          margin:4,
+          margin:2,
           overflow: 'auto',
           background: (theme) =>
             `linear-gradient(${theme.vars.palette.background.surface} 30%, rgba(255, 255, 255, 0)),
@@ -76,19 +76,19 @@ const NumSearchTable = () => {
         }}
       >
         <Table stickyHeader 
-        sx={{padding:3, fontSize:16,}}>
+        sx={{padding:3, fontSize:15,}}>
           <thead>
             <tr>
               <th>Words</th>
               <th>No.of Searches</th>
             </tr>
           </thead>
-          <tbody sx={{fontSize: 16, width:20,}}>
+          <tbody sx={{fontSize: 14, width:20,}}>
             {rows2.map((row, index) => (
               <tr key={index}>
                 <td>{row.word}</td>
                 <td className='td-img'>{row.searches} 
-                  <img src={More} alt="" width={20} height={20} onClick={()=> handleOptionClick(index)} />
+                  <img src={More} alt="" width={20} height={17} onClick={()=> handleOptionClick(index)} />
                   {visibleOptions[index] && (
                     <div className="options">
                       <div>

@@ -8,6 +8,7 @@ import Account from "../../assets/icons/accountIcon"
 import image from "../../assets/images/potriate.png"
 import "../adminComponent/stylesheets/sideBar.css"
 import {useNavigate} from "react-router-dom"
+// import {RiMenu3Line, RiCloseLine} from "react-icons/ri"
 
 const Sidebar = ({active = "", text}) => {
   const navigate = useNavigate()

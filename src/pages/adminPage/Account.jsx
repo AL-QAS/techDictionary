@@ -64,7 +64,7 @@ const Account = ({text}) => {
       placeholder="Country"
       indicator={<KeyboardArrowDown />}
       sx={{
-        backgroundColor:"#BEBEBE", color: "", fontSize: 20, fontFamily:"inter", fontWeight: 400,
+        backgroundColor:"#BEBEBE", color: "", fontSize: 16, fontFamily:"inter", fontWeight: 400,
         lineHeight: 24.2, pl:3,
         [`& .${selectClasses.indicator}`]: {
           transition: '0.2s',
@@ -86,7 +86,7 @@ const Account = ({text}) => {
       placeholder="City"
       indicator={<KeyboardArrowDown />}
       sx={{
-         backgroundColor:"#BEBEBE", color: "", fontSize: 20, fontFamily:"inter", fontWeight: 400,
+         backgroundColor:"#BEBEBE", color: "", fontSize: 16, fontFamily:"inter", fontWeight: 400,
          lineHeight: 24.2,  pl:3,
         [`& .${selectClasses.indicator}`]: {
           transition: '0.2s',
@@ -108,7 +108,7 @@ const Account = ({text}) => {
       placeholder="State"
       indicator={<KeyboardArrowDown />}
       sx={{
-        backgroundColor:"#BEBEBE", color: "", fontSize: 20, fontFamily:"inter", fontWeight: 400,
+        backgroundColor:"#BEBEBE", color: "", fontSize: 16, fontFamily:"inter", fontWeight: 400,
         lineHeight: 24.2,  pl:3,
         [`& .${selectClasses.indicator}`]: {
           transition: '0.2s',

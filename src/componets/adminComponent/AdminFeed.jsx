@@ -93,12 +93,12 @@ useEffect(() => {
     <>
      <div className='feed'>
       <Paper style={{ width: '100%', overflow: 'hidden' }}>
-      <TableContainer style={{ maxHeight: 440 }}>
+      <TableContainer style={{ maxHeight: 440, }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow >
               {columns.map((column) => (
-                <TableCell key={column.id} style={{ minWidth: column.minWidth,  fontFamily: "inter", fontSize:20,}}>
+                <TableCell key={column.id} style={{ minWidth: column.minWidth,  fontFamily: "inter", fontSize:17,}}>
                   {column.label}
                 </TableCell>
               ))}
@@ -113,7 +113,7 @@ useEffect(() => {
           <TableCell
             key={column.id}
             style={{
-              fontSize: 16,
+              fontSize: 14,
               fontFamily: "Inter, sans-serif",
               fontWeight: 400,
               color: "#1E1E1E",
@@ -127,7 +127,7 @@ useEffect(() => {
             <div><p>Edit</p></div>           
          </div>
          <div className="img">
-         <img src={More} width={20} height={30} onClick={()=> hanndleMenu(rowIndex)}/>
+         <img src={More} width={20} height={20} onClick={()=> hanndleMenu(rowIndex)}/>
                {Menu[rowIndex] && (
                       <div className='Menu'>
                         <p>delete</p>

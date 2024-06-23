@@ -1,0 +1,129 @@
+{
+    "notes": [
+        {
+            "word": "algorithm",
+            "class": "noun",
+            "phonetics": "ˈælɡəˌrɪðəm"
+        },
+        {
+            "word": "bandwidth",
+            "class": "noun",
+            "phonetics": "ˈbændˌwɪdθ"
+        },
+        {
+            "word": "cloud",
+            "class": "noun",
+            "phonetics": "klaʊd"
+        },
+        {
+            "word": "debug",
+            "class": "verb",
+            "phonetics": "diˈbʌɡ"
+        },
+        {
+            "word": "encryption",
+            "class": "noun",
+            "phonetics": "ɛnˈkrɪpʃən"
+        },
+        {
+            "word": "firewall",
+            "class": "noun",
+            "phonetics": "ˈfaɪərˌwɔːl"
+        },
+        {
+            "word": "gigabyte",
+            "class": "noun",
+            "phonetics": "ˈɡɪɡəˌbaɪt"
+        },
+        {
+            "word": "hardware",
+            "class": "noun",
+            "phonetics": "ˈhɑːrdˌwɛr"
+        },
+        {
+            "word": "internet",
+            "class": "noun",
+            "phonetics": "ˈɪntərˌnɛt"
+        },
+        {
+            "word": "javascript",
+            "class": "noun",
+            "phonetics": "ˈdʒævəˌskrɪpt"
+        },
+        {
+            "word": "kernel",
+            "class": "noun",
+            "phonetics": "ˈkɜːrnəl"
+        },
+        {
+            "word": "latency",
+            "class": "noun",
+            "phonetics": "ˈleɪtənsi"
+        },
+        {
+            "word": "malware",
+            "class": "noun",
+            "phonetics": "ˈmælˌwɛr"
+        },
+        {
+            "word": "network",
+            "class": "noun",
+            "phonetics": "ˈnɛtˌwɜːrk"
+        },
+        {
+            "word": "opensource",
+            "class": "adjective",
+            "phonetics": "ˈoʊpənˌsɔrs"
+        },
+        {
+            "word": "protocol",
+            "class": "noun",
+            "phonetics": "ˈproʊtəˌkɔl"
+        },
+        {
+            "word": "query",
+            "class": "noun",
+            "phonetics": "ˈkwɪri"
+        },
+        {
+            "word": "runtime",
+            "class": "noun",
+            "phonetics": "ˈrʌnˌtaɪm"
+        },
+        {
+            "word": "syntax",
+            "class": "noun",
+            "phonetics": "ˈsɪnˌtæks"
+        },
+        {
+            "word": "thread",
+            "class": "noun",
+            "phonetics": "θrɛd"
+        },
+        {
+            "word": "upload",
+            "class": "verb",
+            "phonetics": "ˈʌpˌloʊd"
+        },
+        {
+            "word": "virtual",
+            "class": "adjective",
+            "phonetics": "ˈvɜːrtʃuəl"
+        },
+        {
+            "word": "webinar",
+            "class": "noun",
+            "phonetics": "ˈwɛbɪˌnɑr"
+        },
+        {
+            "word": "xml",
+            "class": "noun",
+            "phonetics": "ˌɛks ɛm ˈɛl"
+        },
+        {
+            "word": "yottabyte",
+            "class": "noun",
+            "phonetics": "ˈjɒtəˌbaɪt"
+        }
+      ]
+}

@@ -9,7 +9,7 @@ margin: 0px
 .login-ctn-1{
     width: calc(100% - 120px); 
     height: calc(100vh - 120px);
-    background-image: url("../../../../public/login_img.jpeg");
+    background-image: url("../../../assets/lg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;

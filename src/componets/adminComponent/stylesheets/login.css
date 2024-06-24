@@ -48,6 +48,7 @@ padding: 60px;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
+
     width: calc(100% - 40px);
     height: calc(100vh - 40px);
 }
@@ -88,3 +89,26 @@ padding: 60px;
     align-items: center;
     justify-content: space-between;
 }
+.password-field{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2px;
+    background-color: #BEBEBE;
+    border-radius: 10px;
+    padding-right: 10px;
+}
+.click{
+    cursor: pointer;
+}
+.carousel-icon{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.bgd-none{
+    background-color: transparent;
+}
+

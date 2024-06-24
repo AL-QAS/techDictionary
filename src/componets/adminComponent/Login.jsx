@@ -1,8 +1,7 @@
 
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 import "./stylesheets/login.css";
-import circle from "../../images/circle.jpg";
-import rectangle from "../../images/rectangle.svg";
+
 import eye from "../../images/eye.svg";
 import { useState } from "react";
 
@@ -11,6 +10,7 @@ const Login = () => {
   const showPassword = () => {
     setShow(!show);
   }
+   let navigate = useNavigate()
   return (
     <div className="login-main">
       <div className="login-ctn-1  text-white">
@@ -32,11 +32,7 @@ const Login = () => {
             space lingual
           </p>
         </div>
-        <div className="carousel-icon">
-          <img src={circle} alt="circle" className="bgd-none"/>
-          <img src={rectangle} alt="rectangle" className="bgd-none" />
-          <img src={circle} alt="circle" className="bgd-none" />
-        </div>
+       
       </div>
       <div className="login-ctn-22">
         <svg
@@ -49,7 +45,7 @@ const Login = () => {
         </svg>
         <h2>Sign in</h2>
         <p>Get started with our tech-dictionary!</p>
-        <div className=" login-inputs-ctn">
+        <form className=" login-inputs-ctn">
           <div className="password-field">
             <input
               type="text"
@@ -82,8 +78,8 @@ const Login = () => {
             <Link to="/forgot-password">Forgot password?</Link>
           </div>
 
-          <button className="button-style">Sign in</button>
-        </div>
+          <button className="button-style" onClick={()=>navigate('/dashboard')}>Sign in</button>
+        </form>
       </div>
     </div>
   );

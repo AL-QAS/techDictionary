@@ -22,11 +22,15 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1.0.5
 
+      # Add working-directory to point to the folder containing the .sln file
       - name: Restore NuGet packages
-        run: nuget restore
+        run: nuget restore ./path/to/your/solution.sln  # Replace with the correct path to your .sln file
+        working-directory: D:/a/techDictionary-Web-frontend-fork/techDictionary-Web-frontend-fork  # Adjust if needed
 
+      # Specify the path to your .sln file in the msbuild command
       - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+        run: msbuild ./path/to/your/solution.sln /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+        working-directory: D:/a/techDictionary-Web-frontend-fork/techDictionary-Web-frontend-fork  # Adjust if needed
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3

@@ -4,3 +4,8 @@
     display: grid;
     grid-template-columns: 336px auto;
 }
+@media screen and (max-width:500px){
+    .layout{
+        grid-template-columns: repeat(1, 1fr)
+    }
+}

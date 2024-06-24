@@ -5,6 +5,9 @@ import CardFeed from "./CardFeed";
 import Login from "./Login";
 import Passwords from "./Passwords";
 import Sidebar from "./Sidebar";
+import AdminNav from "./adminNav";
+import ForgotPassword from "./ForgotPassword"
+
 
 
 export {
@@ -15,4 +18,6 @@ export {
     Login,
     Passwords,
     Sidebar,
+    AdminNav,
+    ForgotPassword,
 };

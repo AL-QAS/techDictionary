@@ -55,6 +55,11 @@ const headlines = [
   return (
     <>
 <div className='section__padding' >
+    <Link to='/login-page'><p className="moveToAdmin" style={{color:'#2E3192',
+  fontWeight:'bold',
+  display:'flex',
+  justifyContent:'flexStart'
+  }}>Go to Admin Page</p></Link>
   <Header/>
 </div>
 

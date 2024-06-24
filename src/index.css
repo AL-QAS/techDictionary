@@ -12,6 +12,7 @@
 
   body{
     font-family: 'Alegreya Sans',sans-serif;
+    overflow-x: hidden;
   }
 
   a {
@@ -51,9 +52,11 @@
     height:40px;
     background-color: #2E3192;
     color:#fff;
-    cursor: 'pointer';
+    cursor: pointer;
     border-radius: 8px;
     margin-bottom: 10px;
+      border:none;
+    outline:none
   }
 
   .main__feed-box{
@@ -111,8 +114,18 @@ margin-bottom: 10px;
 
 .main__feed-edit div button{
   display: 'block';
-  flex:.5;
+  flex:.2;
+     background: transparent;
+  border:none;
+  outline:none;
+    cursor: pointer
+}
 
+.main__feed-content_btn button{
+  background: transparent;
+  border:none;
+  outline:none;
+    cursor: pointer;
 }
 
 .main__feed-edit div p{
@@ -179,5 +192,4 @@ margin: 10px 0
   }
   
 
-}
 }

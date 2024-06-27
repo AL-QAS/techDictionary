@@ -5,8 +5,7 @@ FROM node:alpine AS builder
 WORKDIR /app
 
 # Copy all files from current directory to working dir in image
-COPY .env .
-RUN cat .env
+
 COPY . .
 
 # Install node modules and build assets

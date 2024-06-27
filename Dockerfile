@@ -10,8 +10,8 @@ RUN cat .env
 COPY . .
 
 # Install node modules and build assets
-RUN yarn install && yarn build
-
+RUN npm install && npm build
+RUN ls /
 # Nginx stage for serving content
 FROM nginx:alpine
 

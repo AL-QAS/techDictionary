@@ -6,125 +6,17 @@
     display: flex;
     flex-direction: row;
     gap: 45;
-    margin: 0 60px;
-}
-.table{
-    /* margin: 0 60px; */
-    width:830px ;
-    height: 498px;
+    margin: 0 20px;
 }
 .table h1{
     width: 218px;
     height: 39px;
     font-family: Inter;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
     line-height: 38.73px;    
     margin:  30px 0;
 }
-.section{
-    margin: 30px 0;
-}
-.section h1{
-    width: 318px;
-    height: 39px;
-    font-family: Inter;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 38.73px;    
-    margin: 0 0 0 25px;
-}
-.other-table{
-    width: 395px;
-    height: 521px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    margin: 30px 0  0 40px;
-}
-.list{
-    padding: 23px 30px;
-    display:flex;
-    flex-direction: row;
-    gap:90px ;
-}
-.words{
-    display: flex;
-    flex-direction: column;
-    gap: 29px;
-}
-.words h3{
-    width: 52px;
-    height: 24px;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.2px;
-    color: #1E1E1E;    
-}
-.words li{
-    list-style: none;
-    width: 93px;
-    height: 19px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 19.36px;
-}
-.no-words{
-    display: flex;
-    flex-direction: column;
-    gap: 29px;
-}
-.no-words h3{
-    width: 151px;
-    height: 24px;
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.2px;
-    color: #1E1E1E;    
-}
-.nums{
-    display: flex;
-    flex-direction: column;
-    gap: 29px;
-}
-.nums p{
-    width: 44px;
-    height: 19px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.36px;
-}
-.img{
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+.img img{
     cursor: pointer;
-}
-.v2{
-    display: flex;
-    flex-direction: row;
-    gap: 92px;
-}
-.see-more{
-    width: 337px;
-    text-align: center;
-    height: 34px;
-    border-radius: 10px;
-    background-color:#BFB3F3;
-    margin-left: 29px;
-}
-.see-more h3{
-    height: 19px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19.36px;
-    padding-top: 4px;
-    color: #2B00D7;
-    font-family: Inter;
-}
-.More{
-
 }

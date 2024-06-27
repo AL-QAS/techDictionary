@@ -14,7 +14,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0 60px;
+    padding: 0 10px;
    background: #EEEEEE;
    ;
     /* gap:224px; */
@@ -22,12 +22,12 @@ body{
     align-items: center;
 }
 .navbar h1{
-    width: 148px;
+    width: 140px;
     height: 34px;
-    padding:0 60px 0 0;
+    padding:0 40px 0 0;
     font-family: "inter";
     font-weight: 600;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 33.89px;
     color: #1E1E1E;
 }
@@ -36,14 +36,14 @@ body{
     flex-direction: row;
     padding: 10px 20px 10px 20px ;
     gap: 31px;
-    width: 529px;
+    width: 450px;
     background-color: #BEBEBE;
     /* border: 1px solid black; */
     border-radius: 50px;
     border: none;
     outline: none;
-    height: 55px;
-    margin:0 100px 0 224px;
+    height: 45px;
+    margin:0 60px 0 90px;
 }
 .search input{
     display: flex;
@@ -52,7 +52,7 @@ body{
     width: 434px;
     height: 19px;
     border: none;
-    margin-top: 8px;
+    margin-top: 4px;
     outline: none;
     background-color: #BEBEBE;
     
@@ -62,7 +62,7 @@ body{
     height: 19px;
     font-family: inter;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19.36px;
 }
 .search div{
@@ -78,13 +78,13 @@ body{
 }
 .alert{
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50px;
 }
 .alert img{
-   width: 24px;
-   height: 24px;
+   width: 14px;
+   height: 14px;
    margin: 7px;
 }
 .all{
@@ -95,15 +95,16 @@ body{
     margin-left: 25px;
 }
 .pot{
-    width: 41px;
-    height: 41px;
+    width: 31px;
+    height: 31px;
     margin-right: 10px;
     background-color: #FFFFFF;
     border-radius: 50px;
+    margin-top: 4px;
 }
 .pot img{
-    width: 40.55px;
-    height: 40.19px;
+    width: 30.55px;
+    height: 30.19px;
     border-radius: 50px;
 }
 .all p{
@@ -111,16 +112,16 @@ body{
     height: 27px;
     font-weight: 600;
     font-family: inter;
-    font-size: 22px;
-    padding-top: 5px;
+    font-size: 19px;
+    padding-top: 6px;
     /* margin-left: 10px; */
     line-height: 26.63px;
 }
 .down{
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     cursor: pointer;
-    padding-left: 8px;
+    /* padding-left: 4px; */
 }
 .down img{
     width: 30px;
@@ -141,8 +142,8 @@ body{
  font-family: inter;
  font-weight: bold;
  align-items: center;
- font-size: 20px;
- margin: 5px;
+ font-size: 18px;
+ /* margin: 5px; */
  cursor: pointer;
 }
 .options p:hover{

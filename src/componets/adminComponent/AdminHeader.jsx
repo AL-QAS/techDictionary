@@ -4,7 +4,7 @@ import Pending from "../../assets/icons/pending.svg"
 import Book from "../../assets/icons/Book.svg"
 import Ana from "../../assets/icons/ana.svg"
 import Plus from "../../assets/icons/plus.svg"
-import Search from "../../assets/icons/search.svg"
+import Search from "../../assets/icons/Magnifier.svg"
 const AdminHeader = ({type}) => {
   return (
    <div>

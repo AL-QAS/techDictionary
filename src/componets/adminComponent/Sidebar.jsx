@@ -8,6 +8,8 @@ import Account from "../../assets/icons/accountIcon"
 import image from "../../assets/images/potriate.png"
 import "../adminComponent/stylesheets/sideBar.css"
 import {useNavigate} from "react-router-dom"
+import {RiMenu3Line, RiCloseLine} from "react-icons/ri"
+import { useState } from "react"
 
 const Sidebar = ({active = "", text}) => {
   const navigate = useNavigate()
@@ -21,6 +23,7 @@ const Sidebar = ({active = "", text}) => {
   {icon: <Logout/>, text: "Logout", path: "/LogOut"},
   ]
   return (
+   <>
      <div className="side-parent">
     <div className="side-container"> 
       <div className="p-f">
@@ -42,6 +45,7 @@ const Sidebar = ({active = "", text}) => {
     </div>
     </div>
     </div>
+   </>
   )
 }
 

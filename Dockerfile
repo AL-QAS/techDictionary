@@ -1,17 +1,19 @@
-# Name the node stage "builder"
-FROM node:alpine AS builder
+# Stage 1: Build the React app
+FROM node:18-alpine AS builder
 
 # Set working directory
 WORKDIR /app
 
-# Copy all files from current directory to working dir in image
-
+# Copy all files from the current directory to the working directory in the image
 COPY . .
+
+# Copy the .env file
+COPY .env .env
 
 # Install node modules and build assets
 RUN npm install && npm run build
 
-# Nginx stage for serving content
+# Stage 2: Serve the app using Nginx
 FROM nginx:alpine
 
 # Set working directory to nginx asset directory
@@ -23,7 +25,7 @@ RUN rm -rf ./*
 # Copy static assets from builder stage
 COPY --from=builder /app/dist .
 
-# nginx config to work on port 3002
+# Nginx configuration to work on port 3002
 RUN echo ' \
 server { \
   listen 3002; \

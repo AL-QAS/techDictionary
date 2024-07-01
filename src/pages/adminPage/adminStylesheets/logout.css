@@ -1,49 +1,109 @@
-.logout-con{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-@font-face {
-    font-family: "inter";
-    src: url("../../../assets/Fonts/inter.ttf");
+.logout-con {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
-.contents div{
+@font-face {
+  font-family: "Inter";
+  src: url("../../../assets/Fonts/inter.ttf");
+}
+
+.contents {
+  position: absolute;
+  z-index: 30;
+  left: 35%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 500px;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 30px 1px grey;
+  border-radius: 20px;
+}
+
+.subtext div {
+  margin: 5% 35%;
+  width: 100px;
+  height: 100px;
+}
+.subtext h1 {
+  font-family: "inter";
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 38.73px;
+  text-align: center;
+  padding: 13px 0;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 32px;
+}
+.buttons button {
+  width: 500px;
+  height: 65px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #2b00d7;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.2px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.buttons span button {
+  border: 1.5px solid #2b00d7;
+  background-color: #ffffff;
+  color: #2b00d7;
+}
+@media screen and (max-width: 500px) {
+  .contents {
+    left: 7%;
+    width: 400px;
+  }
+  .subtext div {
     margin: 5% 30%;
+  }
+  .subtext div img {
     width: 100px;
-    height: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 300px;
+    height: 60px;
+  }
 }
-.contents h1{
-    font-family: Inter;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 38.73px;
-    text-align: center;    
-    padding: 13px 0;
-}
-.buttons{
-    display: flex;
-    flex-direction: column;
-    gap:13px;
-    margin-top: 32px;
-}
-.buttons button{
-    width: 554px;
-    height: 65px;
-    border-radius: 20px;
-    padding: 10px;
-    background-color: #2B00D7;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.2px;    
-    cursor: pointer;
-    color: #FFFFFF;
-    border: none;
-    outline: none;
-}
-.buttons span button{
-    border: 1.5px solid #2B00D7;
-    background-color: #FFFFFF;
-    color: #2B00D7;
+@media (min-width: 501px) and (max-width: 599px) {
+  .contents {
+    left: 7%;
+    width: 400px;
+  }
+  .subtext div {
+    margin: 5% 30%;
+  }
+  .subtext div img {
+    width: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 300px;
+    height: 60px;
+  }
 }

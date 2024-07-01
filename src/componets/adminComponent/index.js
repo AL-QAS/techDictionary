@@ -9,6 +9,7 @@ import AdminNav from "./adminNav";
 import ForgotPassword from "./ForgotPassword"
 import UpdateTable from "./UpdateTable"
 import NumSearchTable from "./NumSearchTable";
+import SideModal from "./SideModal";
 
 
 
@@ -24,4 +25,5 @@ export {
     ForgotPassword,
     UpdateTable,
     NumSearchTable,
+    SideModal,
 };

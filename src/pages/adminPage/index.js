@@ -4,8 +4,6 @@ import LoginPage from "./LoginPage";
 import UserRequest from "./UserRequest";
 import Words from "./Words";
 import Analytics from "./Analytics";
-import Setting from "./Setting";
-import Logout from "./Logout";
 
 
 export {
@@ -15,7 +13,5 @@ export {
   UserRequest,
   Words,
   Analytics,
-  Setting,
-  Logout
 
 };

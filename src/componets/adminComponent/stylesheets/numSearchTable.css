@@ -31,3 +31,26 @@
 .td-img img{
     cursor: pointer;
 }
+@media  (max-width:500px){
+    .MuiSheet-root {
+        max-width: 428px;
+      }
+      .section{
+        margin-left:5px;
+      }
+      .section h1{
+        font-size: 20px;
+        margin-left: 20%;
+      }
+      .td-img{
+        gap: 90px;
+      }
+}
+@media (min-width:501px) and (max-width:599px){
+  .MuiSheet-root {
+    width : 428px !important;
+  }
+  .section h1{
+    font-size: 23px;
+  }
+}

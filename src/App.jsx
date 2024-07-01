@@ -4,7 +4,7 @@ import {
 } from 'react-router-dom'
 
 import { HomePage,Bookmarks,ChangeWord,NewWord,RecentWords,SearchedWords,WordMeaning } from './pages/userPage'
-import { UserRequest,Account,Dashboard,LoginPage,Words,Analytics, Setting, Logout} from './pages/adminPage'
+import { UserRequest,Account,Dashboard,LoginPage,Words,Analytics,} from './pages/adminPage'
 import ForgotPassword from './componets/adminComponent/ForgotPassword'
 import ResetPasssword from './componets/adminComponent/ResetPassword'
 
@@ -32,8 +32,6 @@ const App = () => {
        <Route path="/reset-password" element={<ResetPasssword />} />
        <Route path="/userRequest" element={<UserRequest />} />
        <Route path="/Analytics" element={<Analytics/>} />
-       <Route path="/Setting" element={<Setting/>} />
-       <Route path="/LogOut" element={<Logout />} />
        <Route path="/Words" element={<Words />} />
        
      </Routes>

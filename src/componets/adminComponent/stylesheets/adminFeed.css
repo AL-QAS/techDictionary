@@ -1,24 +1,52 @@
-.feed{
-    padding: 0 10px;
+.feed {
+  padding: 0 10px;
 }
 @font-face {
-    font-family:"inter";
-    src: url("../../../assets/Fonts/inter.ttf");
+  font-family: "inter";
+  src: url("../../../assets/Fonts/inter.ttf");
 }
-.actions{
-    display: flex;
-    justify-content: space-between;
+.actions {
+  display: flex;
+  justify-content: space-between;
 }
-.btn div{
-    width: 70px;
-    height: 36px;
-    padding: 8px 0 18px 20px;
-    border-radius: 10px;
-    background-color: #2B00D7;
-    font-family: "inter";
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 19.36px;    
-    color:#FFFFFF;
-    cursor: pointer;
+.img {
+  margin-top: 10px;
+}
+.btn div {
+  width: 70px;
+  height: 36px;
+  padding: 8px 0 18px 20px;
+  border-radius: 10px;
+  background-color: #2b00d7;
+  font-family: "inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19.36px;
+  color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  .paperB {
+    max-width: 58%;
+  }
+  .actions {
+    gap: 40px;
+  }
+  .img {
+    margin-top: 10px;
+  }
+  .btn div {
+    margin: 0 0 0 40px;
+  }
+  .size {
+    font-size: 15px !important;
+  }
+}
+@media (min-width: 501px) and (max-width: 599px) {
+  .paperB {
+    width: 65% !important;
+  }
+  .actions {
+    gap: 40px;
+  }
 }

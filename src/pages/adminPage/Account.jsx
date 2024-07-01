@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {  AdminNav } from '../../componets/adminComponent'
 import "../adminPage/adminStylesheets/account.css"
 import Layout from '../../componets/adminComponent/DashLayout/Layout'
@@ -18,7 +18,6 @@ const Account = ({text}) => {
     <h1>Account information</h1>
       <div className="invite"><p>{text = "Invite"}</p></div>
     </div>
-    <div className="signup">
       
       <div className="header">
 
@@ -134,7 +133,7 @@ const Account = ({text}) => {
       
       </div>
 
-    </div>
+   
    </Layout>
   )
 }

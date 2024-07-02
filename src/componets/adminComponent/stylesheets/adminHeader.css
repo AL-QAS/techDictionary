@@ -336,7 +336,7 @@
   .Header h4 {
     font-size: 20px;
     text-align: center;
-    padding-left: 19%;
+    padding-left: 17%;
   }
   .Boxes {
     grid-template-columns: repeat(3, 1fr);
@@ -518,7 +518,8 @@
     margin-left: 30px;
   }
 }
-.Sec-boxes {
+@media (min-width:501px) and (max-width:599px){
+  .Sec-boxes {
     width: 0;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
@@ -552,4 +553,7 @@
   #sec4 h1 {
     margin: 40px 31px 0 10px;
   }
+}
+
+
 

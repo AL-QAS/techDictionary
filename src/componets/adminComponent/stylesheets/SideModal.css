@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "inter";
+    src: url("../../../assets/Fonts/inter.ttf");
+}
+.side-modal{
+    width: 150px;
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+   text-align: center;
+   border-radius:10px ;
+   margin-left: 10px;
+   color: #2B00D7;
+}
+.Modal-links{
+    padding: 5px;
+    font-family: "inter";
+    cursor: pointer;
+    font-size: 15px;
+}

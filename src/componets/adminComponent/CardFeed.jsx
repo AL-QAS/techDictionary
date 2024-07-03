@@ -97,7 +97,7 @@ useEffect(() => {
     <div className='card-section'>
     <div className='table'>
       <h1>User Request</h1>
-      <Paper style={{ width: '100%', overflow: 'hidden' }}>
+      <Paper style={{ width: '100%', overflow: 'hidden' }} className= "paperA">
       <TableContainer style={{ maxHeight: 440 }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>

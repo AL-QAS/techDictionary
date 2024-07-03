@@ -1,33 +1,104 @@
-.td-img{
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
+.td-img {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
 }
 @font-face {
-    font-family: "inter";
-    src: url("../../../assets/Fonts/inter.ttf");
+  font-family: "inter";
+  src: url("../../../assets/Fonts/inter.ttf");
 }
-.options div{
-    width: 70px;
-   background-color: #2000D7;
-   padding: 10px;
-   position: relative;
-   right: 50px;
-   bottom: 15px;
-   border-radius: 5px;
-   color: #FFFFFF;
+.options div {
+  width: 70px;
+  background-color: #2000d7;
+  padding: 10px;
+  position: relative;
+  right: 50px;
+  bottom: 15px;
+  border-radius: 5px;
+  color: #ffffff;
 }
-.section{
-    margin-top: 45px;
+.section {
+  margin-top: 45px;
 }
-.section h1{
-    height: 39px;
-    font-family: Inter;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 38.73px; 
-    margin-left: 8px;
+.section h1 {
+  height: 39px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 38.73px;
+  margin-left: 8px;
 }
-.td-img img{
-    cursor: pointer;
+.td-img img {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .MuiSheet-root {
+    max-width: 428px;
+  }
+  .section {
+    margin-left: 5px;
+  }
+  .section h1 {
+    font-size: 20px;
+    margin-left: 20%;
+  }
+  .td-img {
+    gap: 90px;
+  }
+}
+@media (min-width: 501px) and (max-width: 599px) {
+  .MuiSheet-root {
+    width: 428px !important;
+  }
+  .section h1 {
+    font-size: 23px;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px) {
+  .MuiSheet-root {
+    width: 82% !important;
+    margin-left: 10px !important;
+  }
+  .section h1 {
+    font-size: 23px;
+  }
+  .td-img {
+    gap: 50%;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+  .MuiSheet-root {
+    width: 84% !important;
+    margin-left: 10px !important;
+  }
+  .section h1 {
+    font-size: 23px;
+  }
+  .td-img {
+    gap: 50%;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  .MuiSheet-root {
+    width: 94% !important;
+    margin-left: 10px !important;
+  }
+  .section h1 {
+    font-size: 23px;
+  }
+  .td-img {
+    gap: 50%;
+  }
+}
+@media (min-width:901px) and (max-width:1000px){
+  .MuiSheet-root {
+    width: 84% !important;
+    margin-left: 10px !important;
+  }
+  .section h1 {
+    font-size: 23px;
+  }
+  .td-img {
+    gap: 50%;
+  }
 }

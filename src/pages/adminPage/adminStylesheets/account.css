@@ -1,199 +1,597 @@
-.acc{
-    padding: 40px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.acc {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 @font-face {
-    font-family: inter;
-    src: url("../../assets/Fonts/inter.ttf");
+  font-family: inter;
+  src: url("../../assets/Fonts/inter.ttf");
 }
-.acc h1{
-    width: 317px;
-    height: 39px;
-    font-family: Inter;
-    font-size: 26px;
-    font-weight: 600;
-   line-height: 38.73px;
+.acc h1 {
+  width: 317px;
+  height: 39px;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 38.73px;
 }
-.invite{
-    display: flex;
-    flex-direction: row;
-    background-color: #2B00D7;
-    width:150px;
-    height:55px;
-    padding: 10px;
-    gap: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+.invite {
+  display: flex;
+  flex-direction: row;
+  background-color: #2b00d7;
+  width: 150px;
+  height: 55px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.invite:hover{
-    background-color: #2b00d7bf ;
+.invite:hover {
+  background-color: #2b00d7bf;
 }
-.invite p{
-    width: 54px;
-    height: 24px;
-    font-family: Inter;
+.invite p {
+  width: 54px;
+  height: 24px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.2px;
+  margin: 8px 40px;
+  color: #ffffff;
+}
+.header {
+  width: 950px;
+  height: 733px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  margin: 0 30px;
+  padding: 0;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.con1 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin: 24px 0 0 43px;
+}
+.con1 img {
+  width: 90px;
+  height: 90px;
+  border-radius: 70px;
+}
+.txt {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 5px 0 0 0;
+}
+.txt h1 {
+  width: 127px;
+  height: 34px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33.89px;
+}
+.txt p {
+  width: 195px;
+  height: 24px;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24.2px;
+}
+.con2 {
+  display: flex;
+  flex-direction: row;
+  margin: 43px 65px 0 0;
+  gap: 20px;
+}
+.con2 div {
+  width: 126px;
+  height: 43px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #2b00d7;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.con2 div:hover {
+  background-color: #2b00d7bf;
+}
+.con2 span div {
+  background-color: #ffffff;
+  color: #2b00d7;
+  border: 1.5px solid #2b00d7;
+}
+.con2 span div:hover {
+  background-color: #ffffff;
+}
+.con2 div p {
+  width: 31px;
+  height: 19px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.36px;
+  margin: 3px 39px;
+}
+.section2 {
+  margin: 63px 53px;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+}
+.name-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name-1 input {
+  width: 400px;
+  height: 65px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 20px;
+  background-color: #bebebe;
+  border: none;
+  outline: none;
+}
+.name-1 input::placeholder {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.2px;
+}
+.name-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.name-2 input {
+  width: 400px;
+  height: 65px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 20px;
+  background-color: #bebebe;
+  border: none;
+  outline: none;
+}
+.name-2 input::placeholder {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.2px;
+  text-align: left;
+}
+.address {
+  margin: 39px 0 0 0;
+}
+.address h1 {
+  width: 113px;
+  height: 34px;
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 33.89px;
+  margin-bottom: 20px;
+}
+.second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.second div {
+  width: 400px;
+  height: 65px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  /* padding: 10px 20px 10px 20px; */
+}
+@media screen and (max-width: 500px) {
+  .acc h1 {
     font-size: 20px;
-    font-weight: 600;
-    line-height: 24.2px;
-    margin: 8px 40px;
-    color: #FFFFFF;
-}
-.header{
-    width: 950px;
-    height: 733px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    margin: 0 30px;
-    padding: 0;
-}
-.section1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.con1{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-    margin: 24px 0 0 43px;
-}
-.con1 img{
-    width: 90px;
-    height: 90px;
-    border-radius: 70px;
-}
-.txt{
-    display: flex;
+  }
+  .invite {
+    width: 130px;
+    padding: 10px 20px 0 0;
+  }
+  .invite p {
+    font-size: 17px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
     flex-direction: column;
-    gap: 6px;
-    margin:5px 0 0 0 ;
-}
-.txt h1{
-    width: 127px;
-    height: 34px;
-    font-family: Inter;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 33.89px;
-}
-.txt p{
-    width: 195px;
-    height: 24px;
-    font-family: Inter;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 24.2px;
-}
-.con2{
-    display: flex;
-    flex-direction: row;
-    margin: 43px 65px 0 0;
-    gap: 20px;
-}
-.con2 div{
-    width: 126px;
-    height: 43px;
-    border-radius: 10px;
-    padding: 10px;
-    background-color: #2B00D7;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-}
-.con2 div:hover{
-    background-color:  #2b00d7bf;
-}
-.con2 span div{
-    background-color: #FFFFFF;
-    color: #2B00D7;
-    border: 1.5px solid #2B00D7;
-}
-.con2 span div:hover{
-    background-color:  #FFFFFF;
-}
-.con2 p{
-    width: 31px;
-    height: 19px;
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19.36px;
-    margin: 3px 39px;
-}
-.section2{
-    margin: 63px 53px;
-}
-.name{
-    display: flex;
-    flex-direction: row;
-    gap: 34px;
-}
-.name-1{
-    display:flex ;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
     flex-direction: column;
-    gap: 20px;
-}
-.name-1 input{
-    width: 400px;
-    height: 65px;
-    border-radius: 20px;
-    padding: 10px 10px 10px 20px;
-    background-color: #BEBEBE;
-    border: none;
-    outline: none;
-}
-.name-1 input::placeholder{
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.2px;
-}
-.name-2{
-    display: flex;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 35px;
+  }
+  .name {
     flex-direction: column;
-    gap:20px;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 370px;
+    height: 55px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 450px;
+    height: 950px;
+    margin: 0 15px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 370px;
+    height: 55px;
+  }
 }
-.name-2 input{
-    width: 400px;
+@media (min-width: 501px) and (max-width: 599px){
+  .acc h1 {
+    font-size: 20px;
+  }
+  .invite {
+    width: 130px;
+    padding: 10px 20px 0 0;
+  }
+  .invite p {
+    font-size: 17px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 35px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 370px;
+    height: 55px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 450px;
+    height: 950px;
+    margin: 0 15px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 370px;
+    height: 55px;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 450px;
     height: 65px;
-    border-radius: 20px;
-    padding: 10px 10px 10px 20px;
-    background-color: #BEBEBE;
-    border: none;
-    outline: none;
-}
-.name-2 input::placeholder{
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24.2px;
-    text-align: left;
-    
-}
-.address{
-    margin:39px 0 0 0;
-}
-.address h1{
-    width: 113px;
-    height: 34px;
-    font-family: Inter;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: 33.89px;
-    margin-bottom: 20px;
-}
-.second{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-.second div{
-    width:400px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 550px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 450px;
     height: 65px;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    /* padding: 10px 20px 10px 20px; */
+  }
+}
+@media (min-width: 701px) and (max-width: 800px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 550px;
+    height: 65px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 650px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 550px;
+    height: 65px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 650px;
+    height: 65px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 750px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 650px;
+    height: 65px;
+  }
+}
+@media (min-width:901px) and (max-width:1000px){
+  .acc{
+    margin: 0 -100px;
+  }
+  .header{
+    margin: 0 -80px;
+    width: 620px;
+    height: 990px;
+  }
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 520px;
+    height: 60px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 520px;
+    height: 60px;
+  }
 }

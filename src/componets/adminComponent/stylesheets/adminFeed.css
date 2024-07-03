@@ -25,6 +25,7 @@
   color: #ffffff;
   cursor: pointer;
 }
+
 @media screen and (max-width: 500px) {
   .paperB {
     max-width: 58%;
@@ -45,6 +46,39 @@
 @media (min-width: 501px) and (max-width: 599px) {
   .paperB {
     width: 65% !important;
+  }
+  .actions {
+    gap: 40px;
+  }
+}
+@media (min-width:600px) and (max-width:700px){
+  .paperB {
+    max-width: 76%;
+  }
+  .actions {
+    gap: 40px;
+  }
+}
+@media (min-width:701px) and (max-width:800px){
+  .paperB {
+    max-width: 88%;
+  }
+  .actions {
+    gap: 40px;
+  }
+}
+@media (min-width:801px) and (max-width:900px){
+  .paperB {
+    max-width: 92%;
+  }
+  .actions {
+    gap: 40px;
+  }
+}
+@media (min-width:901px) and (max-width:1000px){
+  .paperB {
+    max-width: 98%;
+    margin:0 -99px;
   }
   .actions {
     gap: 40px;

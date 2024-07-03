@@ -162,7 +162,7 @@ body {
     padding-left: 10px;
   }
   .all {
-    margin-left:25px ;
+    margin-left: 25px;
   }
   .all p {
     font-size: 16px;
@@ -202,5 +202,148 @@ body {
   .down img {
     margin-right: 20px;
   }
- 
 }
+@media (min-width: 600px) and (max-width: 700px) {
+  .menu {
+    display: block;
+    cursor: pointer;
+    /* margin-left: 5px; */
+  }
+  .search {
+    width: 250px;
+    height: 45px;
+    margin: 0 10px 0 -5px;
+  }
+  .navbar h1 {
+    font-size: 22px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .search input {
+    width: 300px;
+    height: 19px;
+  }
+  .search div {
+    margin-top: 5px;
+  }
+  .all {
+    margin: 0 10px 0 10px;
+  }
+  .pot{
+   display: none;
+  }
+  .all p {
+    font-size: 16px;
+    width: 75px;
+  }
+  .down img {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px){
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .search {
+    width: 350px;
+    height: 45px;
+    margin: 0 10px 0 -10px;
+  }
+  .navbar h1 {
+    font-size: 22px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .search input {
+    width: 300px;
+    height: 19px;
+  }
+  .search div {
+    margin-top: 5px;
+  }
+  .all {
+    margin: 0 10px 0 10px;
+  }
+  .pot{
+   display: none;
+  }
+  .all p {
+    font-size: 16px;
+    width: 75px;
+  }
+  .down img {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px){
+  .menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .search {
+    width: 370px;
+    height: 45px;
+    margin: 0 20px 0 -10px;
+  }
+  .navbar h1 {
+    font-size: 22px;
+    width: 140px;
+    margin-left: 25px;
+  }
+  .search input {
+    width: 300px;
+    height: 19px;
+  }
+  .search div {
+    margin-top: 5px;
+  }
+  .all {
+    margin: 0 10px 0 10px;
+  }
+  .all p {
+    font-size: 16px;
+    width: 75px;
+  }
+  .down img {
+    margin-right: 20px;
+  }
+}
+@media (min-width:901px) and (max-width:1000px){
+  .navbar {
+    width: 100%;
+    margin: 0 -90px;
+  }
+  .search {
+    width: 370px;
+    height: 45px;
+    margin: 0 10px 0 -10px;
+  }
+  .navbar h1 {
+    font-size: 22px;
+    width: 140px;
+    margin-left: -10px;
+  }
+  .search input {
+    width: 300px;
+    height: 19px;
+  }
+  .search div {
+    margin-top: 5px;
+  }
+  .all {
+    margin: 0 10px 0 10px;
+  }
+  .all p {
+    font-size: 16px;
+    width: 75px;
+  }
+  .pot{
+    display:none;
+  }
+  .down  {
+    display: none;
+  }
+} 

@@ -45,3 +45,50 @@
     flex-direction: column;
   }
 }
+@media (min-width: 600px) and (max-width: 700px){
+  .paperA {
+    max-width: 87%;
+    padding-right: 10px;
+  }
+  .table h1 {
+    font-size: 23px;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px){
+  .paperA {
+    max-width: 87%;
+    padding-right: 10px;
+  }
+  .table h1 {
+    font-size: 23px;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px){
+  .paperA {
+    max-width: 97%;
+    padding-right: 10px;
+  }
+  .table h1 {
+    font-size: 23px;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+}
+@media (min-width: 901px) and (max-width: 1000px){
+  .card-section {
+    flex-direction: column;
+    margin: 0 -80px;
+  }
+  .paperA {
+    max-width: 85%;
+    /* padding-right: 10px; */
+  }
+}
+

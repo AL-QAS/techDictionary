@@ -107,3 +107,84 @@
     height: 60px;
   }
 }
+@media (min-width: 600px) and (max-width: 700px) {
+  .contents {
+    left: 8%;
+    width: 480px;
+  }
+  .subtext div {
+    margin: 5% 30%;
+  }
+  .subtext div img {
+    width: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 360px;
+    height: 60px;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+  .contents {
+    left: 8%;
+    width: 550px;
+  }
+  .subtext div {
+    margin: 5% 30%;
+  }
+  .subtext div img {
+    width: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 460px;
+    height: 60px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px) {
+  .contents {
+    left: 8%;
+    width: 650px;
+  }
+  .subtext div {
+    margin: 5% 30%;
+  }
+  .subtext div img {
+    width: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 480px;
+    height: 60px;
+  }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+  .contents {
+    left: 15%;
+    width: 650px;
+  }
+  .subtext div {
+    margin: 5% 30%;
+  }
+  .subtext div img {
+    width: 100px;
+  }
+  .subtext h1 {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  .buttons button {
+    width: 480px;
+    height: 60px;
+  }
+}
+

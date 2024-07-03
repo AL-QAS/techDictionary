@@ -37,7 +37,7 @@ const NumSearchTable = () => {
         newVisibleOptions[index] = false;
         return newVisibleOptions;
       });
-    }, 3000);
+    }, 6000);
   };
 
   return (

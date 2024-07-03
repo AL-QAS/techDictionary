@@ -262,7 +262,7 @@
     height: 55px;
   }
 }
-@media (min-width: 501px) and (max-width: 599px) {
+@media (min-width: 501px) and (max-width: 599px){
   .acc h1 {
     font-size: 20px;
   }
@@ -326,5 +326,272 @@
   .second div {
     width: 370px;
     height: 55px;
+  }
+}
+@media (min-width: 600px) and (max-width: 700px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 450px;
+    height: 65px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 550px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 450px;
+    height: 65px;
+  }
+}
+@media (min-width: 701px) and (max-width: 800px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 550px;
+    height: 65px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 650px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 550px;
+    height: 65px;
+  }
+}
+@media (min-width: 801px) and (max-width: 900px){
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 650px;
+    height: 65px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .header {
+    width: 750px;
+    height: 990px;
+    margin: 0 18px;
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 650px;
+    height: 65px;
+  }
+}
+@media (min-width:901px) and (max-width:1000px){
+  .acc{
+    margin: 0 -100px;
+  }
+  .header{
+    margin: 0 -80px;
+    width: 620px;
+    height: 990px;
+  }
+  .acc h1 {
+    font-size: 22px;
+  }
+  .invite {
+    width: 140px;
+    padding: 10px 20px 0 8px;
+  }
+  .invite p {
+    font-size: 18px;
+  }
+  .con1 {
+    margin: 24px 0 0 40px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .con1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .txt {
+    gap: 4px;
+  }
+  .txt h1 {
+    font-size: 20px;
+  }
+  .con2 {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .con2 div {
+    width: 100px;
+  }
+  .con2 div p {
+    margin: 3px 25px;
+  }
+  .section2 {
+    margin: 30px 40px;
+  }
+  .name {
+    flex-direction: column;
+  }
+  .name-1 input,
+  .name-2 input {
+    width: 520px;
+    height: 60px;
+  }
+  .second {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .address {
+    margin: 29px 0 0 0;
+  }
+  .address h1 {
+    font-size: 20px;
+  }
+  .second div {
+    width: 520px;
+    height: 60px;
   }
 }
